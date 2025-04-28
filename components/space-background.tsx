@@ -56,7 +56,7 @@ export function SpaceBackground() {
 
     // Create stars with different directions and twinkling (reduce count)
     const stars: { x: number; y: number; radius: number; speedX: number; speedY: number; twinkleSpeed: number; twinkleVal: number }[] = []
-    for (let i = 0; i < 130; i++) {
+    for (let i = 0; i < 160; i++) {
       const pos = getRandomPositionAvoidingCenterAndOthers(stars, 12)
       stars.push({
         x: pos.x,
@@ -95,7 +95,7 @@ export function SpaceBackground() {
       "#9D7AFF"  // Purple
     ]
 
-    for (let i = 0; i < 5; i++) { // fewer planets
+    for (let i = 0; i < 6; i++) { // fewer planets
       const pos = getRandomPositionAvoidingCenterAndOthers(planets, 220)
       const hasRings = Math.random() > 0.3
       // Generate 0-2 moons
@@ -164,7 +164,7 @@ export function SpaceBackground() {
       type: number;
     }[] = []
     
-    for (let i = 0; i < 2; i++) {
+    for (let i = 0; i < 3; i++) {
       const pos = getRandomPositionAvoidingCenterAndOthers(spaceships, 300)
       spaceships.push({
         x: pos.x,
@@ -221,7 +221,7 @@ export function SpaceBackground() {
       ["#483D8BAA", "#6A5ACDAA", "transparent"], // Slate blue nebula
     ]
     
-    for (let i = 0; i < 2; i++) {
+    for (let i = 0; i < 3; i++) {
       const pos = getRandomPositionAvoidingCenterAndOthers(nebulas, 400)
       nebulas.push({
         x: pos.x,
